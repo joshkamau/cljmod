@@ -49,6 +49,10 @@
       <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
+      <repository>
+          <id>clojars.org</id>
+          <url>http://clojars.org/repo</url>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -71,10 +75,17 @@
         <artifactId>clojure-api</artifactId>
         <version>0.1.0</version>
     </dependency>
+
     <dependency>
         <groupId>org.clojure</groupId>
         <artifactId>clojure</artifactId>
         <version>1.5.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>cheshire</groupId>
+        <artifactId>cheshire</artifactId>
+        <version>5.0.1</version>
     </dependency>
     <!--Test dependencies-->
     <dependency>
